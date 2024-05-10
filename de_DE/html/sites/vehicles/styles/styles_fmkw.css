@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Lubalin_Graph;
+    src: url(../fonts/Lubalin_Graph_Itc_T_EE_Bold.ttf);
+}
+
+@font-face {
+    font-family: Lubalin_Graph_Semi;
+    src: url(../fonts/Lubalin_Graph_SemiBold.otf);
+}
+
+/** These Fonts are from this Website: www.fonts.google.com (They are not stolen :)) **/
+@font-face {
+    font-family: Poppins_Bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins_SemiBold;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins_Thin;
+    src: url(../fonts/Poppins-Thin.ttf);
+}
+
+:root {
+    --color-primary-thw: #003399;
+    --color-primary-variant: #105aee;
+    --color-body-background: #dfdfdf;
+    --color-background: #FFFFFF;
+    --color-font-primary: #000000;
+    --color-font-hover-primary: #3f3e3e;
+    --color-font-primary-variant: #FFFFFF;
+
+    --color-light: rgba(132, 139, 200, 0.18);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+
+    /**
+    --font-poppins-bold: Poppins_Bold;
+    --font-poppins-semibold: Poppins_SemiBold;
+    --font-poppins-thin: Poppins_Thin;
+    **/
+}
+
+/**************************ANIMATIONS**********************************/
+
+@keyframes gkwDrive{
+    from{
+        box-sizing: content-box;
+        width: 35rem;
+        float: right;
+        position: absolute;
+        right: -35rem;
+        top: 11rem;
+    }
+    to{
+        box-sizing: content-box;
+        width: 35rem;
+        float: right;
+        position: absolute;
+        right: 7rem;
+        top: 11rem;
+    }
+}
+
+
+@keyframes gkw-card-flip-to-adault{
+    0%{
+        border-radius: 5rem 0rem 0rem 15rem;
+        display: none;
+        transform: rotateX(0deg);
+        opacity: 0;
+    }
+
+    45%{
+        opacity: 1;
+        display: block;
+    }
+
+    100%{
+        border-radius: 15rem 0rem 0rem 5rem;
+        transform: rotateX(180deg);
+    }
+}
+
+@keyframes gkw-card-flip-to-kids{
+    0%{
+        border-radius: 15rem 0rem 0rem 5rem;
+        transform: rotateX(180deg);
+        display: none;
+        opacity: 0;
+    }
+
+    45%{
+        opacity: 1;
+        display: block;
+    }
+
+    100%{
+        border-radius: 5rem 0rem 0rem 15rem;
+        transform: rotateX(0deg);        
+    }
+}
+@keyframes gkw-kids-disappear{
+    from{
+            opacity: 1;
+            display: block;
+    }
+    to{
+            opacity: 0;
+            display: none;
+    }
+}
+
+@keyframes gkw-adault-disappear{
+    from{
+        opacity: 1;
+        display: block;
+    }
+    to{
+        opacity: 0;
+        display: none;
+    }
+}
+
+/*************************KIDS*******************************/
+
+.heading-rectangle-fmkw{
+    display: none;
+}
