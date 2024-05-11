@@ -133,7 +133,7 @@
     border-radius: 5rem 0rem 0rem 15rem;
     float: right;
     position: relative;
-    top: 15rem;
+    top: 5rem;
     z-index: -1;
     box-shadow: var(--box-shadow);
     animation-play-state: paused;
