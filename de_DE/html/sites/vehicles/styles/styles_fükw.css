@@ -44,27 +44,27 @@
 }
 /**************************ANIMATIONS**********************************/
 
-@keyframes gkwDrive{
+@keyframes fuekwDrive{
     from{
         box-sizing: content-box;
-        width: 35rem;
+        width: 55rem;
         float: right;
         position: absolute;
-        right: -35rem;
-        top: 11rem;
+        right: -45rem;
+        top: 5rem;
     }
     to{
         box-sizing: content-box;
-        width: 35rem;
+        width: 55rem;
         float: right;
         position: absolute;
-        right: 7rem;
-        top: 11rem;
+        right: 0rem;
+        top: 5rem;
     }
 }
 
 
-@keyframes gkw-card-flip-to-adault{
+@keyframes fuekw-card-flip-to-adault{
     0%{
         border-radius: 5rem 0rem 0rem 15rem;
         display: none;
@@ -83,7 +83,7 @@
     }
 }
 
-@keyframes gkw-card-flip-to-kids{
+@keyframes fuekw-card-flip-to-kids{
     0%{
         border-radius: 15rem 0rem 0rem 5rem;
         transform: rotateX(180deg);
@@ -101,7 +101,7 @@
         transform: rotateX(0deg);        
     }
 }
-@keyframes gkw-kids-disappear{
+@keyframes fuekw-kids-disappear{
     from{
             opacity: 1;
             display: block;
@@ -112,7 +112,7 @@
     }
 }
 
-@keyframes gkw-adault-disappear{
+@keyframes fuekw-adault-disappear{
     from{
         opacity: 1;
         display: block;
@@ -125,6 +125,90 @@
 
 /*************************KIDS*******************************/
 
-.heading-rectangle-fükw{
+/*************************KIDS*******************************/
+
+.wrapper .heading-rectangle-fuekw{
+    background-color: var(--color-background);
+    box-sizing: content-box;
+    width: 90rem;
+    height: 40rem;
+    border-radius: 5rem 0rem 0rem 15rem;
+    float: right;
+    position: relative;
+    top: 115rem;
+    z-index: -1;
+    box-shadow: var(--box-shadow);
+    animation-play-state: paused;
+}
+
+
+.heading-rectangle-fuekw .fuekw-kids .fuekw-describtion{
+    float: left;
+    margin-left: 75px;
+}
+
+.fuekw-kids .fuekw-describtion h1{
+    font-size: 45px;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+.fuekw-kids .fuekw-describtion h3{
+    position: relative;
+    text-align: center;
+}
+
+.fuekw-kids .fuekw-text{
+    width: 35rem;
+}
+
+
+.wrapper .heading-rectangle-fuekw .fuekw-kids{
+    opacity: 1;
+    animation-play-state: paused;
+}
+
+.wrapper .heading-rectangle-fuekw .fuekw-kids #yellow-background{
+    box-sizing: content-box;
+    width: 48rem;
+    height: 45rem;
+    position: relative;
+    float: right;
+    right: 30px;
+    top: -3rem;
+}
+
+.wrapper .heading-rectangle-fuekw .fuekw-kids #thw-fuekw{
+    box-sizing: content-box;
+    width: 55rem;
+    float: right;
+    position: absolute;
+    right: 0rem;
+    top: 5rem;
+    animation-name: fuekwDrive;
+    animation-duration: 4s;
+    animation-iteration-count: unset;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+
+/***************************ADULTS*****************************************/
+
+
+.wrapper .heading-rectangle-fuekw .fuekw-adault{
     display: none;
+    transform: rotateX(180deg);
+    animation-play-state: paused;
+    background-color: red;
+    animation-play-state: paused;
+}
+
+.heading-rectangle-fuekw .fuekw-adault #yellow-background{
+    box-sizing: content-box;
+    width: 48rem;
+    height: 45rem;
+    position: relative;
+    float: right;
+    right: 30px;
+    bottom: 43rem;
 }

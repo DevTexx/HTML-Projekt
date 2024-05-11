@@ -45,7 +45,7 @@
 
 /**************************ANIMATIONS**********************************/
 
-@keyframes leftDrive {
+@keyframes mzkwDrive {
     from {
         box-sizing: content-box;
         width: 35rem;
@@ -68,9 +68,9 @@
 }
 
 
-@keyframes gkw-card-flip-to-adault {
+@keyframes mzkw-card-flip-to-adault {
     0% {
-        border-radius: 5rem 0rem 0rem 15rem;
+        border-radius: 0rem 5rem 15rem 0rem;
         display: none;
         transform: rotateX(0deg);
         opacity: 0;
@@ -82,14 +82,14 @@
     }
 
     100% {
-        border-radius: 15rem 0rem 0rem 5rem;
+        border-radius: 0rem 15rem 5rem 0rem;
         transform: rotateX(180deg);
     }
 }
 
-@keyframes gkw-card-flip-to-kids {
+@keyframes mzkw-card-flip-to-kids {
     0% {
-        border-radius: 15rem 0rem 0rem 5rem;
+        border-radius: 0rem 15rem 5rem 0rem;
         transform: rotateX(180deg);
         display: none;
         opacity: 0;
@@ -101,12 +101,12 @@
     }
 
     100% {
-        border-radius: 5rem 0rem 0rem 15rem;
+        border-radius: 0rem 5rem 15rem 0rem;
         transform: rotateX(0deg);
     }
 }
 
-@keyframes gkw-kids-disappear {
+@keyframes mzkw-kids-disappear {
     from {
         opacity: 1;
         display: block;
@@ -118,7 +118,7 @@
     }
 }
 
-@keyframes gkw-adault-disappear {
+@keyframes mzkw-adault-disappear {
     from {
         opacity: 1;
         display: block;
@@ -184,13 +184,13 @@
 
 .wrapper .heading-rectangle-mzkw .mzkw-kids #thw-mzkw {
     box-sizing: content-box;
-    width: 35rem;
+    width: 40rem;
     float: right;
     position: absolute;
     left: 7rem;
     top: 11rem;
     transform: rotateY(180deg);
-    animation-name: gkwDrive;
+    animation-name: mzkwDrive;
     animation-duration: 4s;
     animation-iteration-count: unset;
     animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
