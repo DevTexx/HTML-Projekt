@@ -48,7 +48,7 @@
 @keyframes mzkwDrive {
     from {
         box-sizing: content-box;
-        width: 35rem;
+        width: 40rem;
         float: right;
         position: absolute;
         left: -35rem;
@@ -58,7 +58,7 @@
 
     to {
         box-sizing: content-box;
-        width: 35rem;
+        width: 40rem;
         float: right;
         position: absolute;
         left: 7rem;

@@ -47,19 +47,19 @@
 @keyframes mtwDrive{
     from{
         box-sizing: content-box;
-        width: 55rem;
+        width: 35rem;
         float: right;
         position: absolute;
         right: -45rem;
-        top: 5rem;
+        top: 7rem;
     }
     to{
         box-sizing: content-box;
-        width: 55rem;
+        width: 35rem;
         float: right;
         position: absolute;
-        right: 0rem;
-        top: 5rem;
+        right: 10rem;
+        top: 7rem;
     }
 }
 
@@ -178,11 +178,11 @@
 
 .wrapper .heading-rectangle-mtw .mtw-kids #thw-mtw{
     box-sizing: content-box;
-    width: 55rem;
+    width: 35rem;
     float: right;
     position: absolute;
-    right: 0rem;
-    top: 5rem;
+    right: 10rem;
+    top: 7rem;
     animation-name: mtwDrive;
     animation-duration: 4s;
     animation-iteration-count: unset;

@@ -77,6 +77,18 @@
             </label>
             <img src="./img/THW-Jugend_Logo_2010.svg.png" alt="Das Logo der THW Jugen aus dem Jahr 2010"
                 id="the-jugend-logo" class="active" title="Klicke hier um den THW-Jugend Modus zu verlassen">
+            <span class="material-icons-sharp" id="soundfile-explain-thw-jugend" onclick="playSound(2)" title="Was ist das THW?">
+                volume_up
+            </span>
+        </div>
+    </div>
+
+    <div class="drachi-narrator">
+        <div class="narrator-circle">
+            <img src="./img/drachi-narrator-idle.gif" alt="Das ist Drachi. Er hat viele interessante Sachen zu erzählen!" id="drachi" title="Klicke Drachi an um mehr über das THW zu erfahren">
+        </div>
+        <div class="narrator-time-circle">
+            <div class="narrator-playtime-circle" id="drachi-playtime-bar"></div>
         </div>
     </div>
 
@@ -123,7 +135,7 @@
                     </div>
                 </div>
                 <img src="./img/yellow.png" alt="" id="yellow-background">
-                <img src="./img/MzKW-A.png"
+                <img src="./img/zeichnung-thw-mzkw-links.png"
                     alt="Ein Foto eines blauen LKW auf gelbem Hintergrund mit der aufschrift THW" id="thw-mzkw">
             </div>
             <div class="mzkw-adault" id="mzkw-adault">
@@ -146,8 +158,8 @@
                     </div>
                 </div>
                 <img src="./img/yellow.png" alt="" id="yellow-background">
-                <img src="./img/MTW.png" alt="Ein Foto eines blauen LKW auf gelbem Hintergrund mit der aufschrift THW"
-                    id="thw-mtw">
+                <img src="./img/zeichnung-thw-mtw-links1.png"
+                    alt="Ein Foto eines blauen LKW auf gelbem Hintergrund mit der aufschrift THW" id="thw-mtw">
             </div>
             <div class="mtw-adault" id="mtw-adault">
                 <img src="./img/yellow.png" alt="" id="yellow-background">
@@ -192,8 +204,8 @@
                     </div>
                 </div>
                 <img src="./img/yellow.png" alt="" id="yellow-background">
-                <img src="./img/fuekw.png" alt="Ein Foto eines blauen LKW auf gelbem Hintergrund mit der aufschrift THW"
-                    id="thw-fuekw">
+                <img src="./img/zeichnung-thw-fuest-links.png"
+                    alt="Ein Foto eines blauen LKW auf gelbem Hintergrund mit der aufschrift THW" id="thw-fuekw">
             </div>
             <div class="fuekw-adault" id="fuekw-adault">
                 <img src="./img/yellow.png" alt="" id="yellow-background">
@@ -272,8 +284,10 @@
                 <h5>THW Jugend</h5>
             </a>
         </div>
+        <button type="button" onclick="playTest()">CLICK ME</button>
     </footer>
 
+    <script src="./js/sounds.js"></script>
     <script src="./js/vehicle.js"></script>
     <script src="js/header.js"></script>
 </body>
