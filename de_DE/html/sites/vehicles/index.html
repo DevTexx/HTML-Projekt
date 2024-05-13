@@ -77,7 +77,8 @@
             </label>
             <img src="./img/THW-Jugend_Logo_2010.svg.png" alt="Das Logo der THW Jugen aus dem Jahr 2010"
                 id="the-jugend-logo" class="active" title="Klicke hier um den THW-Jugend Modus zu verlassen">
-            <span class="material-icons-sharp" id="soundfile-explain-thw-jugend" onclick="playSound(2)" title="Was ist das THW?">
+            <span class="material-icons-sharp" id="soundfile-explain-thw-jugend" onclick="playSound(2)"
+                title="Was ist das THW?">
                 volume_up
             </span>
         </div>
@@ -85,7 +86,27 @@
 
     <div class="drachi-narrator">
         <div class="narrator-circle">
-            <img src="./img/drachi-narrator-idle.gif" alt="Das ist Drachi. Er hat viele interessante Sachen zu erzählen!" id="drachi" title="Klicke Drachi an um mehr über das THW zu erfahren">
+            <img src="./img/drachi-narrator-idle.gif"
+                alt="Das ist Drachi. Er hat viele interessante Sachen zu erzählen!" id="drachi"
+                title="Klicke Drachi an um mehr über das THW zu erfahren">
+            <div class="lifebar">
+                <img src="./img/sausage_drachi.png" id="life-1" alt="Das ist dein erstes Leben!"
+                    title="Verliere diese Wurst nicht! Sonst geht Drachi hungrig nachhause.">
+                <img src="./img/sausage_drachi.png" id="life-2" alt="Das ist dein erstes Leben!"
+                    title="Verliere diese Wurst nicht! Sonst geht Drachi hungrig nachhause.">
+                <img src="./img/sausage_drachi.png" id="life-3" alt="Das ist dein erstes Leben!"
+                    title="Verliere diese Wurst nicht! Sonst geht Drachi hungrig nachhause.">
+            </div>
+            <div class="controll-bar">
+                <button class="nextQuestion">
+                    <span class="material-icons-sharp">
+                        lightbulb
+                    </span> <!-- Falls Verfügbar leuchten lassen !-->
+                </button>
+                <button class="repeatQuestion"><span class="material-icons-sharp">
+                        replay_circle_filled
+                    </span></button> <!-- Letzte Frage wiederholen -->
+            </div>
         </div>
         <div class="narrator-time-circle">
             <div class="narrator-playtime-circle" id="drachi-playtime-bar"></div>
@@ -99,15 +120,28 @@
     <div class="wrapper">
         <div class="hilfswerk-infos">
             <h1>Der THW Fuhrpark</h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/4Ia_XiLc6wU?si=NU61e6zLkuRz6g3D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="hilfswerk-video">
+                <iframe src="https://www.youtube.com/embed/4Ia_XiLc6wU?si=NU61e6zLkuRz6g3D" title="THW Autos im Einsatz"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <div id="kids-infos">
+                <h1>THW Kids</h1>
                 <p>
-                    Drachi hat sich heimlich auf des THW Fest geschlichen. Kannst du ihm helfen einige Fragen der THW Mitglieder zu beantworten?
+                    Drachi hat sich heimlich auf des THW Fest geschlichen. Kannst du ihm helfen einige Fragen der THW
+                    Mitglieder zu beantworten?
+                    Solltest du eine Frage falsch beantworten, verlierst du eine <img src="./img/sausage_drachi.png"
+                        alt="Bild einer kleinen gepixelten Wurst"
+                        title="Verliere diese Wurst nicht! Sonst geht Drachi hungrig nachhause.">. Bist du bei null
+                    angekommen, so muss Drachi heute hungrig bleiben.
                 </p>
             </div>
             <div id="adault-infos">
+                <h1>THW für Erwachsene</h1>
                 <p>
-                    Klicken sie auf den Schalter in der linken oberen Ecke, um die Informationen für Erwachsene und Jugendliche abzurufen.
+                    Klicken sie auf den Schalter in der linken oberen Ecke, um die Informationen für Erwachsene und
+                    Jugendliche abzurufen.
                 </p>
             </div>
         </div>

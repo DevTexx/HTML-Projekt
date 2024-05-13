@@ -58,7 +58,7 @@ html {
 
 body {
     background-color: var(--color-body-background);
-    min-height: 650vh;
+    min-height: 730vh;
     position: relative;
     z-index: 0;
 }
@@ -273,6 +273,7 @@ nav .headlining img#headlining-icon {
     float: right;
     right: 0;
     display: block;
+    z-index: 11;
 }
 
 .narrator-circle {
@@ -289,6 +290,25 @@ nav .headlining img#headlining-icon {
     transition: all 300ms ease-in-out;
     overflow: hidden;
     z-index: 30;
+}
+
+.narrator-circle .lifebar{
+    position: absolute;
+    z-index: 12;
+    height: 5rem;
+    top: 3rem;
+    width: 10rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 5rem);
+    float: right;
+    right: 140px;
+    top: 15px;
+}
+
+.lifebar img{
+    width: 100px;
+    transform: rotate(-25deg);
 }
 
 .drachi-narrator .narrator-time-circle {
@@ -324,14 +344,19 @@ nav .headlining img#headlining-icon {
     transform: rotate(45deg);
 }
 
+.wrapper{
+    position: relative;
+    z-index: 10;
+}
 
 .wrapper .hilfswerk-infos{
     position: relative;
     background: linear-gradient(0deg, transparent, #003399);
     width: 100%;
-    height: 40em;
+    height: 55em;
     z-index: -1;
     top: 0;
+    align-items: center;
 }
 
 .hilfswerk-infos h1{
@@ -343,8 +368,66 @@ nav .headlining img#headlining-icon {
     top: 10rem;
 }
 
+.hilfswerk-infos .hilfswerk-video{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15rem;
+}
+
+.hilfswerk-infos .hilfswerk-video iframe{
+    align-self: center;
+    width: 560px;
+    height: 315px;
+    border-radius: 20px;
+}
+
+.hilfswerk-infos #kids-infos{
+    display: block;
+    position: relative;
+    float: right;
+    right: 3rem;
+}
+
+.hilfswerk-infos #kids-infos p, .hilfswerk-infos #adault-infos p{
+    position: relative;
+    box-sizing: content-box;
+    width: 35rem;
+    top: 1rem;
+    font-family: Poppins_SemiBold, Arial;
+    color: var(--color-font-primary-variant);
+}
+
+.hilfswerk-infos p img{
+    width: 50px;
+    transition: all 200ms ease-in-out;
+    transform: rotate(-25deg);
+}
+
+.hilfswerk-infos p img:hover{
+    filter: invert(100%);
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.hilfswerk-infos #kids-infos h1, .hilfswerk-infos #adault-infos h1{
+    font-size: 40px;
+    text-align: center;
+    margin-right: 3rem;
+    top: 0;
+}
+
+.hilfswerk-infos #adault-infos{
+    display: block;
+    position: relative;
+    float: left;
+    left: 3rem;
+}
+
 .aging-settings {
     position: fixed;
+    z-index: 11;
 }
 
 .aging-settings:hover .age-group-circle {
@@ -512,7 +595,7 @@ footer {
     height: 200px;
     width: 100%;
     box-shadow: 0 -2rem 3rem var(--color-light);
-    top: 650vh;
+    top: 730vh;
     left: 0;
 }
 
