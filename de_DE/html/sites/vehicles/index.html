@@ -19,23 +19,21 @@
         <img src="./img/thw_logo.png" id="headlining-icon" alt="Logo des THW">
         <div class="resp-menu" id="resp-menu">
             <ul id="resp-ul">
-                <li class="overmenu"><a href="../html/index.html">Startseite</a></li>
+                <li class="overmenu"><a href="../../index.html">Startseite</a></li>
                 <li class="overmenu"><a class="active" href="./index.html">Fahrzeuge</a></li>
                 <div class="nav-icon">
                     <a href="#"><img src="./img/thw_logo.png"></a>
                 </div>
-                <li class="overmenu" id="dropdownable"><a href="#">Team</a></li>
+                <li class="overmenu" id="dropdownable"><a href="../team/index.html">Team</a>
+                    <div class="team-drop-down">
+                        <ul>
+                            <li><a href="#" id="drop">THW Jugend</a></li>
+                            <li><a href="#" id="drop">THWler</a></li>
+                            <li><a href="#" id="drop">Social Media Team</a></li>
+                            <li><a href="#" id="drop">Workshop Team</a></li>
+                        </ul>
+                    </div></li>
                 <li class="overmenu"><a href="#">Werde ein Teil!</a></li>
-
-                <div class="team-drop-down">
-                    <ul>
-                        <li><a href="#">THW Jugend</a></li>
-                        <li><a href="#">THWler</a></li>
-                        <li><a href="#">Social Media Team</a></li>
-                        <li><a href="#">Workshop Team</a></li>
-                    </ul>
-                </div>
-
             </ul>
         </div>
         <div class="resp-menu-area" id="resp-menu-area-btn"><span class="material-icons-sharp"
@@ -63,54 +61,6 @@
         <img src="./img/BEHERO_Wallpaper003.jpg" alt="" id="background_2">
     </div>
 
-    <div class="aging-settings">
-        <div class="age-group-circle">
-            <label class="switch-adult-kid">
-                <input type="checkbox" onclick="switchAltersGruppe()" id="gkw-switch-checkbox-1" checked>
-                <span class="slider"></span>
-            </label>
-            <img src="./img/THW-Jugend_Logo_2010.svg.png" alt="Das Logo der THW Jugen aus dem Jahr 2010"
-                id="the-jugend-logo" class="active" title="Klicke hier um den THW-Jugend Modus zu verlassen">
-            <span class="material-icons-sharp" id="soundfile-explain-thw-jugend" onclick="playSound(2)"
-                title="Was ist das THW?">
-                volume_up
-            </span>
-        </div>
-    </div>
-
-    <div class="drachi-narrator">
-        <div class="narrator-circle">
-            <img src="./img/drachi-narrator-idle.gif"
-                alt="Das ist Drachi. Er hat viele interessante Sachen zu erzählen!" id="drachi"
-                title="Klicke Drachi an um mehr über das THW zu erfahren">
-            <div class="lifebar">
-                <img src="./img/sausage_drachi.png" id="life-1" alt="Das ist dein erstes Leben!"
-                    title="Verliere diese Wurst nicht! Sonst geht Drachi hungrig nachhause.">
-                <img src="./img/sausage_drachi.png" id="life-2" alt="Das ist dein erstes Leben!"
-                    title="Verliere diese Wurst nicht! Sonst geht Drachi hungrig nachhause.">
-                <img src="./img/sausage_drachi.png" id="life-3" alt="Das ist dein erstes Leben!"
-                    title="Verliere diese Wurst nicht! Sonst geht Drachi hungrig nachhause.">
-            </div>
-            <div class="controll-bar">
-                <button class="nextQuestion">
-                    <span class="material-icons-sharp">
-                        lightbulb
-                    </span> <!-- Falls Verfügbar leuchten lassen !-->
-                </button>
-                <button class="repeatQuestion"><span class="material-icons-sharp">
-                        replay_circle_filled
-                    </span></button> <!-- Letzte Frage wiederholen -->
-            </div>
-        </div>
-        <div class="narrator-time-circle">
-            <div class="narrator-playtime-circle" id="drachi-playtime-bar"></div>
-        </div>
-    </div>
-
-    <button onclick="topFunction()" id="upbutton" title="Go to top"><span class="material-icons-sharp">expand_less
-        </span>
-    </button>
-
     <div class="wrapper">
         <div class="hilfswerk-infos">
             <h1>Der THW Fuhrpark</h1>
@@ -123,160 +73,32 @@
             <div id="kids-infos">
                 <h1>THW Kids</h1>
                 <p>
-                    Drachi hat sich heimlich auf des THW Fest geschlichen. Kannst du ihm helfen einige Fragen der THW
-                    Mitglieder zu beantworten?
-                    Solltest du eine Frage falsch beantworten, verlierst du eine <img src="./img/sausage_drachi.png"
-                        alt="Bild einer kleinen gepixelten Wurst"
-                        title="Verliere diese Wurst nicht! Sonst geht Drachi hungrig nachhause.">. Bist du bei null
-                    angekommen, so muss Drachi heute hungrig bleiben.
+                    Die großen blauen Autos gehören nicht wie du vielleicht vermuten könntes zur Feuerwehr, sondern sind eine "Spezialeinheit" die direkt dem Staat untersteht.
+                    <br></br>
+                    Wusstest du schon, dass das THW rund 11.800 Einsatzfahrzeuge besitzt? Und all diese Autos haben Blinklichter, Sirenen und nachtürlich Ausrüstung.
                 </p>
             </div>
             <div id="adault-infos">
                 <h1>THW für Erwachsene</h1>
                 <p>
-                    Klicken sie auf den Schalter in der linken oberen Ecke, um die Informationen für Erwachsene und
-                    Jugendliche abzurufen.
+                    Das THW ist eine Hilfsorganisation, welche nicht der Kommune sondern dem Bundesministerium für Inneres und Heimat unterstellt ist. <a href="https://www.bmi.bund.de/DE/ministerium/bmi-als-arbeitsgeber/praktikum/praktikum-node.html"><i>Es gibt viele interessante Praktikas in diesen Ministerien.</i></a>
+                    <br></br>
+                    Dem Technischen Hilfswerk sind rund 2.000 Hauptamtliche sowie mehrere Hundert Freiwillige in 66 Regionalstellen unterstellt.
                 </p>
             </div>
         </div>
-        <!----------------------------------[   GKW   ]--------------------------------------------------------->
-        <div class="heading-rectangle-gkw" id="gkw-card">
-            <div class="gkw-kids" id="gkw-kids">
-                <div class="gkw-describtion">
-                    <div class="gkw-title">
-                        <h1>Der Gerätekraftwagen</h1>
-                        <h3>Funkrufname: Heros (Ort) 22/51</h3>
-                    </div>
-                    <div class="gkw-text">
-                        <p>Der <a href="https://thwiki.org/t=Gerätekraftwagen">Gerätekraftwagen</a> ist das am häufgsten
-                            eingesetzte Fahrzeuge des THWs. Der LKW sieht wie ein falsch bepinseltes Feuerwehrauto aus.
-                            Es ist tatsächlich sogar so ähnlich beladen wie eines.</p>
-                    </div>
-                </div>
-                <img src="./img/yellow.png" alt="" id="yellow-background">
-                <img src="./img/GKW-1.png" alt="Ein Foto eines blauen LKW auf gelbem Hintergrund mit der aufschrift THW"
-                    id="thw-gkw">
+
+        <div class="car-gkw">
+            <div class="upper">
+
             </div>
-            <div class="gkw-adault" id="gkw-adault">
-                <img src="./img/yellow.png" alt="" id="yellow-background">
+            <div class="main">
+
+            </div>
+            <div class="bottom">
+
             </div>
         </div>
-        <!----------------------------------[   GKW   ]--------------------------------------------------------->
-        <!----------------------------------[   MzKW   ]--------------------------------------------------------->
-        <div class="heading-rectangle-mzkw" id="mzkw-card">
-            <div class="mzkw-kids" id="mzkw-kids">
-                <div class="mzkw-describtion">
-                    <div class="mzkw-title">
-                        <h1>Der Mehrzweckkraftwagen</h1>
-                        <h3>Funkrufname: Heros (Ort) 22/51</h3>
-                    </div>
-                    <div class="mzkw-text">
-                        <p>Der <a href="https://thwiki.org/t=Gerätekraftwagen">Gerätekraftwagen</a> ist das am häufgsten
-                            eingesetzte Fahrzeuge des THWs. Der LKW sieht wie ein falsch bepinseltes Feuerwehrauto aus.
-                            Es ist tatsächlich sogar so ähnlich beladen wie eines.</p>
-                    </div>
-                </div>
-                <img src="./img/yellow.png" alt="" id="yellow-background">
-                <img src="./img/zeichnung-thw-mzkw-links.png"
-                    alt="Ein Foto eines blauen LKW auf gelbem Hintergrund mit der aufschrift THW" id="thw-mzkw">
-            </div>
-            <div class="mzkw-adault" id="mzkw-adault">
-                <img src="./img/yellow.png" alt="" id="yellow-background">
-            </div>
-        </div>
-        <!----------------------------------[   MzKW   ]--------------------------------------------------------->
-        <!----------------------------------[   MTW   ]--------------------------------------------------------->
-        <div class="heading-rectangle-mtw" id="mtw-card">
-            <div class="mtw-kids" id="mtw-kids">
-                <div class="mtw-describtion">
-                    <div class="mtw-title">
-                        <h1>Der Mannschaftstransportwagen</h1>
-                        <h3>Funkrufname: Heros (Ort) 22/51</h3>
-                    </div>
-                    <div class="mtw-text">
-                        <p>Der <a href="https://thwiki.org/t=Gerätekraftwagen">Gerätekraftwagen</a> ist das am häufgsten
-                            eingesetzte Fahrzeuge des THWs. Der LKW sieht wie ein falsch bepinseltes Feuerwehrauto aus.
-                            Es ist tatsächlich sogar so ähnlich beladen wie eines.</p>
-                    </div>
-                </div>
-                <img src="./img/yellow.png" alt="" id="yellow-background">
-                <img src="./img/zeichnung-thw-mtw-links1.png"
-                    alt="Ein Foto eines blauen LKW auf gelbem Hintergrund mit der aufschrift THW" id="thw-mtw">
-            </div>
-            <div class="mtw-adault" id="mtw-adault">
-                <img src="./img/yellow.png" alt="" id="yellow-background">
-            </div>
-        </div>
-        <!----------------------------------[   MTW   ]--------------------------------------------------------->
-        <!----------------------------------[   FmKW   ]--------------------------------------------------------->
-        <div class="heading-rectangle-fmkw" id="fmkw-card">
-            <div class="fmkw-kids" id="fmkw-kids">
-                <div class="fmkw-describtion">
-                    <div class="fmkw-title">
-                        <h1>Der Fernmeldekraftwagen</h1>
-                        <h3>Funkrufname: Heros (Ort) 22/51</h3>
-                    </div>
-                    <div class="fmkw-text">
-                        <p>Der <a href="https://thwiki.org/t=Gerätekraftwagen">Gerätekraftwagen</a> ist das am häufgsten
-                            eingesetzte Fahrzeuge des THWs. Der LKW sieht wie ein falsch bepinseltes Feuerwehrauto aus.
-                            Es ist tatsächlich sogar so ähnlich beladen wie eines.</p>
-                    </div>
-                </div>
-                <img src="./img/yellow.png" alt="" id="yellow-background">
-                <img src="./img/fernmeldekraftwagen.png"
-                    alt="Ein Foto eines blauen LKW auf gelbem Hintergrund mit der aufschrift THW" id="thw-fmkw">
-            </div>
-            <div class="fmkw-adault" id="fmkw-adault">
-                <img src="./img/yellow.png" alt="" id="yellow-background">
-            </div>
-        </div>
-        <!----------------------------------[   FmKW   ]--------------------------------------------------------->
-        <!----------------------------------[   FüKW   ]--------------------------------------------------------->
-        <div class="heading-rectangle-fuekw" id="fuekw-card">
-            <div class="fuekw-kids" id="fuekw-kids">
-                <div class="fuekw-describtion">
-                    <div class="fuekw-title">
-                        <h1>Der Führungskraftwagen</h1>
-                        <h3>Funkrufname: Heros (Ort) 22/51</h3>
-                    </div>
-                    <div class="fuekw-text">
-                        <p>Der <a href="https://thwiki.org/t=Gerätekraftwagen">Gerätekraftwagen</a> ist das am häufgsten
-                            eingesetzte Fahrzeuge des THWs. Der LKW sieht wie ein falsch bepinseltes Feuerwehrauto aus.
-                            Es ist tatsächlich sogar so ähnlich beladen wie eines.</p>
-                    </div>
-                </div>
-                <img src="./img/yellow.png" alt="" id="yellow-background">
-                <img src="./img/zeichnung-thw-fuest-links.png"
-                    alt="Ein Foto eines blauen LKW auf gelbem Hintergrund mit der aufschrift THW" id="thw-fuekw">
-            </div>
-            <div class="fuekw-adault" id="fuekw-adault">
-                <img src="./img/yellow.png" alt="" id="yellow-background">
-            </div>
-        </div>
-        <!----------------------------------[   FüKW   ]--------------------------------------------------------->
-        <!----------------------------------[   FüKomKW   ]--------------------------------------------------------->
-        <div class="heading-rectangle-fuekomkw" id="fuekomkw-card">
-            <div class="fuekomkw-kids" id="fuekomkw-kids">
-                <div class="fuekomkw-describtion">
-                    <div class="fuekomkw-title">
-                        <h1>Der Kommunikationskraftwagen</h1>
-                        <h3>Funkrufname: Heros (Ort) 22/51</h3>
-                    </div>
-                    <div class="fuekomkw-text">
-                        <p>Der <a href="https://thwiki.org/t=Gerätekraftwagen">Gerätekraftwagen</a> ist das am häufgsten
-                            eingesetzte Fahrzeuge des THWs. Der LKW sieht wie ein falsch bepinseltes Feuerwehrauto aus.
-                            Es ist tatsächlich sogar so ähnlich beladen wie eines.</p>
-                    </div>
-                </div>
-                <img src="./img/yellow.png" alt="" id="yellow-background">
-                <img src="./img/fuehrungs-kommunikationskraftwagen.png"
-                    alt="Ein Foto eines blauen LKW auf gelbem Hintergrund mit der aufschrift THW" id="thw-fuekomkw">
-            </div>
-            <div class="fuekomkw-adault" id="fuekomkw-adault">
-                <img src="./img/yellow.png" alt="" id="yellow-background">
-            </div>
-        </div>
-        <!----------------------------------[   FüKomKW   ]--------------------------------------------------------->
     </div>
     <footer>
         <div class="footer-content">
@@ -328,9 +150,6 @@
         </div>
     </footer>
 
-    <script src="./js/sounds.js"></script>
-    <script src="./js/vehicle.js"></script>
-    <script src="js/header.js"></script>
 </body>
 
 </html>
