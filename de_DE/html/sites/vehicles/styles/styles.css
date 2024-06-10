@@ -350,22 +350,120 @@ nav .headlining img#headlining-icon {
     text-decoration: underline;
 }
 
-.wrapper .car-gkw .upper{
+.wrapper .upper{
     background: linear-gradient(180deg, transparent, white);
     height: 10rem;
     width: 100%;
 }
 
-.car-gkw .main{
+.main{
     background-color: white;
     width: 100%;
-    height: 30rem;
+    height: 35rem;
 }
 
-.wrapper .car-gkw .bottom{
+.main .headline{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 25px;
+}
+
+.headline h1{
+    font-size: 45px;
+}
+
+.main .video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    margin-top: 75px;
+}
+
+.main .video iframe{
+    border-radius: 10px;
+}
+
+.wrapper .bottom{
     background: linear-gradient(0deg, transparent, white);
     height: 10rem;
     width: 100%;
+}
+
+.technichal-details{
+    position: relative;
+    float: right;
+    top: 5rem;
+    right: 15rem;
+}
+
+.technichal-describtion{
+    position: relative;
+    float: left;
+    left: 7rem;
+    top: 5rem;
+    width: 25rem;
+}
+
+.technichal-describtion a#file_download{
+    z-index: 101;
+    position: absolute;
+    top: 17rem;
+}
+
+.technichal-describtion a button{
+    width: 25rem;
+    height: 2.5rem;
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+    border-color: var(--color-primary-thw);
+    background-color: transparent;
+    border-style: solid;
+    transition: all 200ms ease-in-out;
+}
+
+.technichal-describtion a button:hover{
+    border-color: var(--color-primary-thw);
+    background-color: var(--color-primary-thw);
+}
+
+.technichal-describtion a button:hover span, .technichal-describtion a button:hover h5{
+    color: var(--color-font-primary-variant);
+}
+
+.technichal-describtion a button span{
+    position: relative;
+    width: 25px;
+    top: 0px;
+}
+
+.technichal-describtion a button h5{
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.technichal-describtion h1, .technichal-details h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.technichal-describtion p{
+    font-family: Poppins;
+}
+
+.technichal-details ul li{
+    font-family: Poppins;
+    list-style: "⭐";
 }
 /************************************************************************************/
 
