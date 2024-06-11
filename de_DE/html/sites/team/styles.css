@@ -58,7 +58,7 @@ html {
 
 body {
     background-color: white;
-    min-height: 100vh;
+    min-height: 200vh;
 }
 
 h1 {
@@ -216,21 +216,138 @@ nav .headlining img#headlining-icon {
 
 /************************************************************************************/
 
-.thw-judth{
+.quote-1{
     position: relative;
     top: 5rem;
+    height: 5rem;
+    background-color: var(--color-background);
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
+    padding: 5px;
 }
 
+.quote-1 h2{
+    text-align: center;
+    text-shadow: #FC0 1px 0 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.quote-1 p{
+    text-align: right;
+    position: relative;
+    right: 25rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.quote-1 p a{
+    text-decoration: none;
+    color: var(--color-font-primary);
+}
+
+.quote-1 p a:hover{
+    color: var(--color-primary-variant);
+    text-decoration: underline;
+}
+
+.information{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10rem;
+}
+
+.information article{
+    text-align: center;
+    text-wrap: pretty;
+    width: 35rem;
+    font-size: 20px;
+    font-family: Poppins;
+}
+
+/***************************************/
 .flip-front img{
     width: 18rem;
     position: absolute;
     z-index: 99;
+    filter: grayscale(100%);
 }
 
-.employee-du-jas{
+.flip-card-meta{
+    transition: all 200ms ease-in-out;
+    z-index: 101;
+}
+
+.flip-card-meta:hover{
+    cursor: pointer;
+    scale: 105%;
+    z-index: 10001;
+}
+.name-card{
+    position: relative;
+    background-color: var(--color-background);
+    width: 20rem;
+    height: 7rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0 0 1rem 1rem;
+    z-index: 101;
+}
+.name-card h1, .name-card p{
+    text-align: center;
+    font-family: Poppins;
+    padding: 2.5px;
+}
+
+.thw-back{
     position: absolute;
-    top: 5rem;
-    left: 5rem;
+    width: 100%;
+    height: fit-content;
+    top: 40rem;
+    z-index: 50;
+}
+.thw-upper-back path{
+    position: relative;
+    fill: var(--color-font-hover-primary);
+    box-shadow: var(--box-shadow);
+    z-index: 50;
+}
+.thw-middle-back{
+    background-color: var(--color-font-hover-primary);
+    height: 50rem;
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+    z-index: 50;
+    transform: translate(0, -5px);
+}
+.thw-bottom-back path{
+    position: relative;
+    fill: var(--color-font-hover-primary);
+    z-index: 50;
+    -moz-box-shadow: -5px -5px 5px #888;
+    -webkit-box-shadow: -5px -5px 5px #888;
+    box-shadow: -5px -5px 5px #888;
+}
+
+.thw-bottom-back{
+    top: -5px;
+    position: relative;
+    
+}
+/***************************************/
+
+
+.thw-judth{
+    display: flex;
+    position: relative;
+    top: 20rem;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    z-index: 101;
 }
 
 .employee-du-jas .card-rectangle{
@@ -243,21 +360,6 @@ nav .headlining img#headlining-icon {
     border-radius: 1rem 1rem 0 0;
 }
 
-.employee-agatha{
-    position: absolute;
-    top: 5rem;
-    left: 30rem;
-}
-
-.flip-card-meta{
-    transition: all 200ms ease-in-out;
-}
-
-.flip-card-meta:hover{
-    cursor: pointer;
-    scale: 105%;
-}
-
 .employee-agatha .card-rectangle{
     background-image: linear-gradient(0deg, rgb(3, 61, 148), rgb(0, 82, 210));
     position: relative;
@@ -268,15 +370,8 @@ nav .headlining img#headlining-icon {
     border-radius: 1rem 1rem 0 0;
 }
 
-
-.employee-claus{
-    position: absolute;
-    top: 5rem;
-    left: 55rem;
-}
-
-.employee-claus .card-rectangle{
-    background-image: linear-gradient(0deg, rgb(254, 131, 98), rgb(255, 189, 173));
+.employee-berlin .card-rectangle{
+    background-image: linear-gradient(0deg, rgb(255, 152, 0), rgb(255, 198, 0));
     position: relative;
     z-index: 90;
     width: 20rem;
@@ -285,20 +380,82 @@ nav .headlining img#headlining-icon {
     border-radius: 1rem 1rem 0 0;
 }
 
-
-.name-card{
-    background-color: var(--color-background);
+.employee-berlin img{
     width: 20rem;
-    height: 7rem;
-    box-shadow: var(--box-shadow);
-    border-radius: 0 0 1rem 1rem;
-}
-.name-card h1, .name-card p{
-    text-align: center;
-    font-family: Poppins;
-    padding: 2.5px;
 }
 
+/***************************************/
+
+.thw-adults{
+    display: flex;
+    position: relative;
+    top: 25rem;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    z-index: 101;
+}
+/***************************************/
+
+.ad-banner{
+    position: relative;
+    top: 30rem;
+    height: fit-content;
+}
+
+.ad-banner .blue-rectangle{
+    position: relative;
+    width: 100%;
+    height: 40rem;
+}
+
+.blue-rectangle img{
+    width: 100%;
+    transform: translateY(-40rem);
+    filter: blur(20px);
+}
+/***************************************/
+
+.social-back{
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    top: 150rem;
+    z-index: 50;
+}
+.social-upper-back path{
+    position: relative;
+    fill: var(--color-font-hover-primary);
+    box-shadow: var(--box-shadow);
+    z-index: 50;
+}
+.social-middle-back{
+    background-color: var(--color-font-hover-primary);
+    height: 50rem;
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+    z-index: 50;
+    transform: translate(0, -5px);
+}
+.social-bottom-back path{
+    position: relative;
+    fill: var(--color-font-hover-primary);
+    z-index: 50;
+    -moz-box-shadow: -5px -5px 5px #888;
+    -webkit-box-shadow: -5px -5px 5px #888;
+    box-shadow: -5px -5px 5px #888;
+}
+
+.social-bottom-back{
+    top: -5px;
+    position: relative;
+    
+}
 
 /************************************************************************************/
 
@@ -309,7 +466,7 @@ footer {
     height: 200px;
     width: 100%;
     box-shadow: 0 -2rem 3rem var(--color-light);
-    top: 100vh;
+    top: 200vh;
     left: 0;
 }
 
