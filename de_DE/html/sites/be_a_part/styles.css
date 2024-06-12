@@ -58,7 +58,7 @@ html {
 
 body {
     background-color: var(--color-body-background);
-    min-height: 100vh;
+    min-height: 60vh;
 }
 
 h1 {
@@ -215,6 +215,243 @@ nav .headlining img#headlining-icon {
 
 /************************************************************************************/
 
+.back-image img{
+    width: 100%;
+    transform: translateY(-30rem);
+    filter: blur(10px);
+}
+
+.background{
+    position: absolute;
+    top: 15rem;
+    width: 100%;
+    height: 5rem;
+    z-index: 90;
+}
+
+.information-middle{
+    background-color: var(--color-font-hover-primary);
+    height: 50rem;
+    width: 100%;
+    transform: translateY(-5px);
+}
+
+.information-top path{
+    fill: var(--color-font-hover-primary);
+}
+
+.information-bottom path{
+    fill: var(--color-font-hover-primary);
+}
+.information-bottom {
+    transform: translateY(-5px);
+}
+
+.price-list{
+    position: absolute;
+    width: 45%;
+    z-index: 101;
+    font-family: Poppins;
+    color: white;
+    float: right;
+    right: 2.55rem;
+    top: 35rem;
+    
+}
+
+.price-list h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 2.5rem;
+}
+
+.price-list table{
+    gap: 5rem;
+    border: 2px solid white;
+    box-shadow: 1rem 2rem 3rem black
+}
+
+.price-list table tr, .price-list table td, .price-list table th{
+    padding: 8px;
+    text-align: left;
+}
+
+.price-list table tr:nth-child(even){
+    background-color: #8b8b8b;
+}
+
+.apply-form{
+    position: absolute;
+    top: 35rem;
+    width: 45%;
+    float: left;
+    left: 2.5rem;
+    z-index: 100;
+}
+
+.apply-form h1{
+    color: var(--color-font-primary-variant);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 2.5rem;
+}
+
+.apply-form form{
+    display: grid;
+    grid-template-rows: max-content;
+    gap: 15px;
+    grid-template-columns: 50% 50%;
+}
+
+.apply-form form input{
+    border-radius: 5px;
+    border: 1px solid white;
+    height: 35px;
+    font-size: 15px;
+    font-family: Poppins;
+    padding-left: 2.5rem;
+    width: 70%;
+}
+
+.apply-form form span{
+    color: var(--color-body-background);
+    font-size: 25px;
+    position: absolute;
+    padding-left: 0.5rem;
+    transition: all 200ms ease-in-out;
+}
+
+.apply-form .form-purchase-type select{
+    width: 80.5%;
+    height: 40px;
+    padding-left: 2.2rem;
+    font-family: Poppins;
+    font-size: 15px;
+    padding: 0 0 0 2.2rem;
+    border-radius: 5px;
+
+}
+
+#cAGB, #adAgree{
+    width: 40px;
+}
+
+.input-division{
+    display: flex;
+    align-items: center;
+}
+
+.apply-form .input-division:hover span{
+    color: var(--color-primary-thw);
+}
+
+.form-firstname{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.form-lastname{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.form-email{
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.form-adress{
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.form-calendar{
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.form-purchase-type{
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.form-telephone{
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+.form-groups{
+    grid-area: 6 / 1 / 7 / 2;
+}
+
+.form-agb{
+    grid-area: 5 / 2 / 6 / 3;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    width: 100%;
+    align-items: center;
+}
+
+.form-agb p, .form-ad p{
+    width: 20rem;
+    font-family: Poppins;
+    font-size: 11px;
+    text-align: left;
+    color: var(--color-font-primary-variant);
+}
+
+p a{
+    color: var(--color-primary-variant);
+    text-decoration: none;
+}
+
+p a:hover{
+    color: var(--color-primary-thw);
+    text-decoration: underline;
+}
+
+.form-ad{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    width: 100%;
+    grid-area: 4 / 2 / 5 / 3;
+    align-items: center;
+}
+
+.apply-form button{
+    width: 80%;
+    height: 2.5rem;
+    grid-area: 6 / 2 / 7 / 3;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: var(--color-font-primary-variant);
+    font-family: Poppins;
+    font-size: 15px;
+    transition: all 200ms ease-in-out;
+}
+
+.apply-form button:hover{
+    cursor: pointer;
+    background-color: var(--color-primary-variant);
+    border: 2px solid var(--color-primary-variant);
+}
+
+.apply-form article p{
+    position: relative;
+    top: 5rem;
+    color: var(--color-font-primary-variant);
+    font-family: Poppins;
+}
+
+.back-image-second{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 40rem;
+    z-index: 1;
+}
+
+.back-image-second img{
+    width: 100%;
+    transform: translateY(-25rem);
+    filter: blur(10px);
+    overflow: hidden;
+}
+
 /************************************************************************************/
 
 footer {
@@ -224,8 +461,9 @@ footer {
     height: 200px;
     width: 100%;
     box-shadow: 0 -2rem 3rem var(--color-light);
-    top: 100vh;
+    top: 45vh;
     left: 0;
+    z-index: 10001;
 }
 
 footer .footer-content{
