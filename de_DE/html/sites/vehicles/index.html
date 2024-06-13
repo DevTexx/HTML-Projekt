@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
     <link rel="icon" type="img/thw-icon" href="img/thw_logo.png">
 
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles.css">
 
 </head>
 
@@ -64,6 +64,11 @@
 
     <div class="wrapper">
         <div class="hilfswerk-infos">
+            <svg id="be-beautiful" viewBox="0 0 1440 320">
+                <path fill-opacity="1"
+                    d="M0,288L80,245.3C160,203,320,117,480,96C640,75,800,117,960,128C1120,139,1280,117,1360,106.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+                </path>
+            </svg>
             <h1>Der THW Fuhrpark</h1>
             <div class="hilfswerk-video">
                 <iframe src="https://www.youtube.com/embed/4Ia_XiLc6wU?si=NU61e6zLkuRz6g3D" title="THW Autos im Einsatz"
@@ -93,12 +98,26 @@
                     Regionalstellen unterstellt.
                 </p>
             </div>
+            <svg id="topper-end" viewBox="0 0 1440 320">
+                <defs>
+                    <linearGradient id="gradient" gradientTransform="rotate(180)">
+                        <stop offset="0%" style="stop-color:#5f84fc;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:transparent;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <path fill="url(#gradient)" fill-opacity="1"
+                    d="M0,224L80,218.7C160,213,320,203,480,181.3C640,160,800,128,960,122.7C1120,117,1280,139,1360,149.3L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+                </path>
+            </svg>
         </div>
 
         <!--------------------------------[GKW]------------------------------------->
         <div class="car-gkw">
-            <div class="upper">
-            </div>
+            <svg viewBox="0 0 1440 320" id="upper">
+                <path fill="white" fill-opacity="1"
+                    d="M0,192L80,170.7C160,149,320,107,480,117.3C640,128,800,192,960,197.3C1120,203,1280,149,1360,122.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                </path>
+            </svg>
             <div class="main">
                 <div class="headline">
                     <h1>Gerätekraftwagen GKW</h1>
@@ -143,16 +162,22 @@
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="bottom">
-            </div>
+            <svg id="bottom" viewBox="0 0 1440 320">
+                <path fill="white" fill-opacity="1"
+                    d="M0,96L80,128C160,160,320,224,480,224C640,224,800,160,960,138.7C1120,117,1280,139,1360,149.3L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+                </path>
+            </svg>
         </div>
         <!--------------------------------[GKW]------------------------------------->
 
 
         <!--------------------------------[MZKW]------------------------------------->
-        <div class="car-mzkw">
-            <div class="upper">
-            </div>
+        <div class="car-mzkw" id="mzkw">
+            <svg id="upper" viewBox="0 0 1440 320">
+                <path fill="white" fill-opacity="1"
+                    d="M0,160L80,170.7C160,181,320,203,480,181.3C640,160,800,96,960,96C1120,96,1280,160,1360,192L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                </path>
+            </svg>
             <div class="main">
                 <div class="headline">
                     <h1>Mehrzweckkraftwagen MzKW</h1>
@@ -188,23 +213,31 @@
                         </button>
                     </a>
                 </div>
+
+                <!-- Das hier eingebettete Video nutzt einen <iframe>-Tag um auf YouTube Video (extrene Quelle) zugreifen zu können. -->
                 <div class="video">
                     <iframe alt="Ein Video in dem der MzKW beschrieben wird." width="560" height="315"
-                        src="https://youtu.be/z4-fWcQRkE8?si=GbXN-BUi-5vUJ-y0" title="So sieht ein MzKW aus."
-                        frameborder="0"
+                        src="https://www.youtube.com/embed/z4-fWcQRkE8?si=mnj1KiEkCD9jLzpZ"
+                        title="So sieht ein MzKW aus." frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="bottom">
-            </div>
+            <svg id="bottom" viewBox="0 0 1440 320">
+                <path fill="white" fill-opacity="1"
+                    d="M0,192L80,176C160,160,320,128,480,133.3C640,139,800,181,960,181.3C1120,181,1280,139,1360,117.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+                </path>
+            </svg>
         </div>
         <!--------------------------------[mzkw]------------------------------------->
 
         <!--------------------------------[MTW]------------------------------------->
         <div class="car-mtw">
-            <div class="upper">
-            </div>
+            <svg id="upper" viewBox="0 0 1440 320">
+                <path fill="white" fill-opacity="1"
+                    d="M0,160L80,186.7C160,213,320,267,480,272C640,277,800,235,960,213.3C1120,192,1280,192,1360,192L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                </path>
+            </svg>
             <div class="main">
                 <div class="headline">
                     <h1>Mannschaftstransportwagen MTW</h1>
@@ -246,14 +279,20 @@
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="bottom">
-            </div>
+            <svg id="bottom" viewBox="0 0 1440 320">
+                <path fill="white" fill-opacity="1"
+                    d="M0,224L80,229.3C160,235,320,245,480,240C640,235,800,213,960,202.7C1120,192,1280,192,1360,192L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+                </path>
+            </svg>
         </div>
         <!--------------------------------[MTW]------------------------------------->
         <!--------------------------------[FüKomKW]------------------------------------->
-        <div class="car-mtw">
-            <div class="upper">
-            </div>
+        <div class="car-fükom">
+            <svg id="upper" viewBox="0 0 1440 320">
+                <path fill="white" fill-opacity="1"
+                    d="M0,192L80,202.7C160,213,320,235,480,250.7C640,267,800,277,960,261.3C1120,245,1280,203,1360,181.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+                </path>
+            </svg>
             <div class="main">
                 <div class="headline">
                     <h1>Führungs- und Kommunikationskraftwagen FüKomKW</h1>
@@ -296,6 +335,11 @@
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
+            <svg id="bottom" viewBox="0 0 1440 320">
+                <path fill="white" fill-opacity="1"
+                    d="M0,160L80,138.7C160,117,320,75,480,85.3C640,96,800,160,960,192C1120,224,1280,224,1360,224L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+                </path>
+            </svg>
         </div>
         <!--------------------------------[FüKomKW]------------------------------------->
     </div>

@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hier wird eine Beschreibung zur Website hinzugefügt um das SEO Feature der HTML - Skriptsprache nutzen zu können. -->
     <meta name="description"
         content="Bei Krisen Situationen wie Krieg oder Naturkatastrophen ist das Technische Hilfswerk der Bundesrepublik Deutschland jederzeit zur Stelle um mit den Blauen THW Autos auszuhelfen.">
     <title>Wir sind ein Team! - Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- Für schnelleres erkennen der Website in der obrigen Taskleiste wird hier ein Icon gesetzt -->
     <link rel="icon" type="img/thw-icon" href="./img/thw_logo_alpha.png">
     <link rel="stylesheet" href="./styles.css">
 </head>
@@ -23,6 +25,7 @@
                     <a href="index.html"><img src="./img/thw_logo.png"></a>
                 </div>
                 <li class="overmenu" id="dropdownable"><a href="../html/sites/team/index.html">Team</a>
+                    <!-- Hinzufügen des Dropdown Menüs, welches durch das :hover Event in CSS geöffnet wird-->
                     <div class="team-drop-down">
                         <ul>
                             <li><a href="./sites/team/index.html#thw-jugend" id="drop">THW Jugend</a></li>
@@ -56,6 +59,334 @@
 
 <body>
 
+    <div class="wrapper">
+
+        <div class="top">
+            <div class="background-top">
+            </div>
+            <svg viewBox="0 0 1440 320">
+                <path fill-opacity="1"
+                    d="M0,288L80,245.3C160,203,320,117,480,96C640,75,800,117,960,128C1120,139,1280,117,1360,106.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+                </path>
+            </svg> <a href="./sites/vehicles/index.html#mzkw" class="mzkw">
+                <div class="mzkw-example">
+                    <img src="./img/yellow.png" alt="Yellow Background" class="yellow">
+                    <img src="./img/mzkw_Animation.png" alt="Mehrzweckkraftwagen des THWs" class="mzkw">
+                </div>
+            </a>
+            <article>
+                <h1>Willkommen beim Technischen Hilfswerk</h1>
+                <br>
+                <p>Die Helfer des THWs sind rund um die Uhr in Bereitschaft um der Feuerwehr, der Polizei oder anderen
+                    Stellen auszuhelfen. Im Katastrophenfall, wie beispielsweise bei einer Überflutung des
+                    Einzugsgebietes, hilft das THW Keller auszupumpen und gefährdete Regionen zu evakuiren. <br> Die
+                    anderen Helfer erledigen Aufgaben, wie beispielsweise das befüllen von Sandsäcken. <br>
+                    <br> Hier gibts ne kleine Kostprobe vom THW:
+                </p>
+                <audio preload="auto" controls>
+                    <source src="./img/sounds/Folgetonhorn.mp3" type="audio/mp3">
+                    Ihr Browser unterstützt dieses Feature leider nicht! :(
+                </audio>
+            </article>
+            <!-- Hier wird eine Verktor Grafik erstellt um eine geschwungene Welle zu erstellen die sich über den obigen Bildrand zieht. Diese wird mittels CSS blau eingefärbt -->
+            <svg id="bottom" viewBox="0 0 1440 320">
+                <path fill="#0099ff" fill-opacity="1"
+                    d="M0,192L80,192C160,192,320,192,480,170.7C640,149,800,107,960,112C1120,117,1280,171,1360,197.3L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+
+        <!-- Erstellen einer Division die die späteren Hexagons beherbergt.-->
+        <div class="hexagons">
+
+            <!-- Setzen der Backgrounds dieser Division auf einen gelben Farbstrich (Anpassung mit CSS)-->
+            <div class="hex-back">
+                <img src="./img/yellow.png" alt="">
+            </div>
+
+            <div class="flex-1-4">
+                <div class="hex-1 hexagon">
+                    <div class="meta">
+                        <div class="hex-top hex-top-1">
+
+                        </div>
+                        <div class="hex-middle hex-middle-1">
+
+                        </div>
+                        <div class="hex-bottom hex-bottom-1">
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="profile-picture" id="stew-art">
+                            <img src="./img/stuart-cameraman.png" alt="" id="stew-art">
+                        </div>
+                        <h2 class="name-field">Stew art</h2>
+                    </div>
+                </div>
+
+                <div class="hex-2 hexagon">
+                    <div class="meta">
+                        <div class="hex-top hex-top-2">
+
+                        </div>
+                        <div class="hex-middle hex-middle-2">
+
+                        </div>
+                        <div class="hex-bottom hex-bottom-2">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2 class="crit-field"> <span class="material-icons-sharp">
+                                schedule
+                            </span> 24 / 7</h2>
+                        <p>Unsere strapazierfähigen Mitarbeiter sind 24/7 für sie verfügbar. Unsere Workshops jedoch
+                            sind nur in unserer Saison möglich. <br><b> Saison 24: 19.06 - 07.09</b></p>
+                    </div>
+                </div>
+
+                <div class="hex-3 hexagon">
+                    <div class="meta">
+                        <div class="hex-top hex-top-3">
+
+                        </div>
+                        <div class="hex-middle hex-middle-3">
+
+                        </div>
+                        <div class="hex-bottom hex-bottom-3">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="profile-picture" id="aghata">
+                            <img src="./img/agatha-nervlich.png" alt="" id="aghata">
+                        </div>
+                        <h2 class="name-field">Aghata Nervnich</h2>
+                    </div>
+                </div>
+
+                <div class="hex-4 hexagon">
+                    <div class="meta">
+
+                        <div class="hex-top hex-top-4">
+
+                        </div>
+                        <div class="hex-middle hex-middle-4">
+
+                        </div>
+                        <div class="hex-bottom hex-bottom-4">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2 class="crit-field"><span class="material-icons-sharp">
+                                verified
+                            </span> Verifiziert</h2>
+                        <p>Unsere Workshops werden von qualifiziertem und gut geschultem Personal durchgeführt. Ein
+                            Lerneffekt ist somit garantiert.</p>
+                        <a href="./sites/be_a_part/index.html"><button>Mehr</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-5-9">
+                <div class="hex-5 hexagon">
+                    <div class="meta">
+
+                        <div class="hex-top hex-top-5">
+
+                        </div>
+                        <div class="hex-middle hex-middle-5">
+
+                        </div>
+                        <div class="hex-bottom hex-bottom-5">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="profile-picture" id="berle">
+                            <img src="./img/Praktorius_Berle.png" alt="" id="berle">
+                        </div>
+                        <h2 class="name-field">Praktorius Berle</h2>
+                    </div>
+                </div>
+
+                <div class="hex-6 hexagon">
+                    <div class="meta">
+
+                        <div class="hex-top hex-top-6">
+
+                        </div>
+                        <div class="hex-middle hex-middle-6">
+
+                        </div>
+                        <div class="hex-bottom hex-bottom-6">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2 class="crit-field"><span class="material-icons-sharp">
+                                favorite
+                            </span> Herzblut</h2>
+                        <p>In die Erstellung dieser Website, und dem dazugehörigen Content sowie Eastereggs floss viel
+                            Freizeit und Aufwand hinein. <br>Trotz vieler Unklarheiten bis zuletzt ist das Projekt
+                            beendet.</p>
+                    </div>
+                </div>
+
+                <div class="hex-7 hexagon">
+                    <div class="meta">
+
+                        <div class="hex-top hex-top-7">
+
+                        </div>
+                        <div class="hex-middle hex-middle-7">
+
+                        </div>
+                        <div class="hex-bottom hex-bottom-7">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="profile-picture" id="auerle">
+                            <img src="./img/gilbert-auerle.png" alt="" id="auerle">
+                        </div>
+                        <h2 class="name-field">Gilbert Auerle</h2>
+                    </div>
+                </div>
+
+                <div class="hex-8 hexagon">
+                    <div class="meta">
+
+                        <div class="hex-top hex-top-8">
+
+                        </div>
+                        <div class="hex-middle hex-middle-8">
+
+                        </div>
+                        <div class="hex-bottom hex-bottom-8">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2 class="crit-field"><span class="material-icons-sharp"
+                                style="font-size: 50px; transform: translateY(15px);">
+                                javascript
+                            </span> JavaScript</h2>
+                        <p>Die erste Version dieser Website beinhaltete JavaScript, dieses wurde dann im nachhinein
+                            entfernt ._. <br>Die zum <b>AKTUELLEN</b> Zeitpunkt feststehenden Kriterien sollten hier
+                            erfüllt werden ;P</p>
+                    </div>
+                </div>
+
+                <div class="hex-9 hexagon">
+                    <div class="meta">
+
+                        <div class="hex-top hex-top-9">
+
+                        </div>
+                        <div class="hex-middle hex-middle-9">
+
+                        </div>
+                        <div class="hex-bottom hex-bottom-9">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="profile-picture" id="novum">
+                            <img src="./img/siggi_novum.png" alt="" id="novum">
+                        </div>
+                        <h2 class="name-field">Siggi Novum</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-10-13">
+                <div class="hex-1 hexagon">
+                    <div class="meta">
+
+                        <div class="hex-top hex-top-1">
+
+                        </div>
+                        <div class="hex-middle hex-middle-1">
+
+                        </div>
+                        <div class="hex-bottom hex-bottom-1">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="profile-picture" id="pezos">
+                            <img src="./img/Jeff_Pezos.png" alt="" id="pezos">
+                        </div>
+                        <h2 class="name-field">Jeff Pezos</h2>
+                    </div>
+                </div>
+
+                <div class="hex-2 hexagon">
+                    <div class="meta">
+
+                        <div class="hex-top hex-top-2">
+
+                        </div>
+                        <div class="hex-middle hex-middle-2">
+
+                        </div>
+                        <div class="hex-bottom hex-bottom-2">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2 class="crit-field"><span class="material-icons-sharp">
+                                gavel
+                            </span> Datenschutz</h2>
+                        <p>Der Code dieser Website konnte veröffentlich werden, da er keinerlei Einlogdaten beinhaltet.
+                            Diese Website wurde zu 100% (<a
+                                href="https://github.com/DevTexx/HTML-Projekt.git"><b>nachweislich</b></a>) von Simon
+                            Stier geschrieben.</p>
+                    </div>
+                </div>
+
+                <div class="hex-3 hexagon">
+                    <div class="meta">
+
+                        <div class="hex-top hex-top-3">
+
+                        </div>
+                        <div class="hex-middle hex-middle-3">
+
+                        </div>
+                        <div class="hex-bottom hex-bottom-3">
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="profile-picture" id="rizzler">
+                            <img src="./img/roland_Pilberich.png" alt="" id="rizzler">
+                        </div>
+                        <h2 class="name-field">R. P. Rizzler</h2>
+                    </div>
+                </div>
+
+                <div class="hex-4 hexagon">
+                    <div class="meta">
+
+                        <div class="hex-top hex-top-4">
+
+                        </div>
+                        <div class="hex-middle hex-middle-4">
+
+                        </div>
+                        <div class="hex-bottom hex-bottom-4">
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2 class="crit-field"><span class="material-icons-sharp"
+                                style="font-size: 50px; transform: translateY(15px);">
+                                css
+                            </span> CSS</h2>
+                        <p>Diese Website besteht aus gut und gerne 5.552 Zeilen HTML und CSS Code. Viele Zeiten Code
+                            nutzen
+                            die Klassen namen um die Attribute zu bearbeiten.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--Hinzufügen eines Footers für bessere Kontrolle auch am Ende der Seite-->
     <footer>
         <div class="footer-content">
             <div class="copyright-social-media">
@@ -76,6 +407,7 @@
             <a href="../sites/impressum/index.html">
                 <h5>Impressum</h5>
             </a>
+            <!-- Auf Klick wird die satirische Datenschutzerklärung als PDF Form angezeigt. Diese ist in keinem Fall ernst zu nehmen-->
             <a href="../../Datenschutzgrundverordnung.pdf">
                 <h5>AGB</h5>
             </a>
